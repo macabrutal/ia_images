@@ -38,6 +38,15 @@ const App = () => {
           </div>
         ))}
       </div>
+      <footer>
+        <div className="footer_container">
+          <h3> Macarena Rodríguez Correa </h3>
+          <p className="white ">
+            UI/UX Designer, Front-end &
+            <span className="coral bold"> IA Lover ✨</span>.
+          </p>
+        </div>
+      </footer>
       {modalOpen && (
         <div className="modal">
           <div className="modal-content">

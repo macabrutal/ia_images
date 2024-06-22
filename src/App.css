@@ -34,7 +34,7 @@ footer {
 }
 
 h1 {
-  background-color: #b403d4;
+  /* background-color: #b403d4;
   background-image: linear-gradient(
     90deg,
     #b403d4 0%,
@@ -44,7 +44,7 @@ h1 {
     #b403d4 100%
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   font-size: 4rem;
   margin: 0;
 }
@@ -64,15 +64,9 @@ p {
 }
 
 .degrade {
-  background-color: #b403d4;
-  background-image: linear-gradient(
-    90deg,
-    #b403d4 30%,
-    #e00454 37%,
-    #dd6362 50%,
-    #e00454 60%,
-    #b403d4 80%
-  );
+  background-color: #ee095d;
+  background-image: linear-gradient(270deg, #dd6362 40%, #ee095d 80%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;

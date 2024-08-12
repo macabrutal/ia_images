@@ -18,12 +18,16 @@ const App = () => {
   return (
     <div className="container">
       <header>
+        <div className="video-wrapper">
+          <img src={process.env.PUBLIC_URL + "/img/cerebro.png"} />
+        </div>
         <h1 className="degrade">Imágenes con IA</h1>
-        <h3>
+        {/* <h3>
           Imágenes generadas con Inteligencia Artificial por una apasionada
           <span className="coral bold"> IA Lover</span>.
-        </h3>
+        </h3> */}
       </header>
+
       <div className="card-container">
         {cardsData.map((card, index) => (
           <div className="card" key={index} onClick={() => openModal(card)}>
@@ -74,6 +78,21 @@ const App = () => {
 
 const cardsData = [
   {
+    image: "img01.png",
+    source: "MidJourney",
+    title: "El Futuro",
+  },
+  {
+    image: "img02.png",
+    source: "MidJourney",
+    title: "Tecnología avanzada",
+  },
+  {
+    image: "img03.png",
+    source: "MidJourney",
+    title: "Entrenando a la IA",
+  },
+  {
     image: "img1.png",
     source: "MidJourney",
     title: "Robot woman",
@@ -111,12 +130,12 @@ const cardsData = [
   {
     image: "img8.png",
     source: "MidJourney",
-    title: "Felicidad",
+    title: "La felicidad",
   },
   {
     image: "img9.png",
     source: "MidJourney",
-    title: "Colores",
+    title: "Colores de la sabiduría",
   },
 ];
 

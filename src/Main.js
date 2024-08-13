@@ -8,7 +8,7 @@ const Main = () => {
       </header>
 
       <video
-        src={process.env.PUBLIC_URL + "/img/kling-futuristic.mp4"}
+        src={process.env.PUBLIC_URL + "/img/ciencia.mp4"}
         width="1229"
         height="635"
         controls

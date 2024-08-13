@@ -312,9 +312,9 @@ h3 {
   }
 
   .main-container video {
+    width: 100%;
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
   }
 
   .main-container {

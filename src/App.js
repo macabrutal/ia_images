@@ -47,7 +47,7 @@ const App = () => {
     {
       image: "img3.png",
       source: "MidJourney",
-      title: "Bajo el agua",
+      title: "Belleza tropical",
     },
     {
       image: "img4.png",

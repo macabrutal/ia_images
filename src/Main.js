@@ -9,7 +9,7 @@ const Main = () => {
 
       <video
         src={process.env.PUBLIC_URL + "/img/robot-gen3.mp4"}
-        width="1229"
+        width="1130"
         height="635"
         controls
         autoplay // Iniciar el video automáticamente

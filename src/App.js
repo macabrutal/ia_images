@@ -27,7 +27,7 @@ const App = () => {
     {
       image: "img02.png",
       source: "MidJourney",
-      title: "Tecnología avanzada",
+      title: "Mes de los gatos",
     },
     {
       image: "img03.png",
@@ -57,7 +57,7 @@ const App = () => {
     {
       image: "img5.png",
       source: "MidJourney",
-      title: "Natural",
+      title: "Felinos",
     },
     {
       image: "img6.png",

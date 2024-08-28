@@ -27,7 +27,7 @@ const App = () => {
     {
       image: "img02.png",
       source: "MidJourney",
-      title: "Mes de los gatos",
+      title: "Misterio en Lavanda",
     },
     {
       image: "img03.png",
@@ -47,23 +47,23 @@ const App = () => {
     {
       image: "img7.png",
       source: "MidJourney",
-      title: "Colores",
+      title: "Un Soplo de Color Pastel",
     },
 
     {
       image: "img11.png",
       source: "MidJourney",
-      title: "Belleza tropical",
+      title: "Esencia de verde Kiwi",
     },
     {
       image: "img10.png",
       source: "MidJourney",
-      title: "Humo",
+      title: "Encanto en humo de colores",
     },
     {
       image: "img12.png",
       source: "MidJourney",
-      title: "Colores",
+      title: "Belleza frutal",
     },
     {
       image: "img4.png",

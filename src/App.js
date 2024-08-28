@@ -40,14 +40,30 @@ const App = () => {
       title: "Robot woman",
     },
     {
-      image: "img2.png",
-      source: "MidJourney",
-      title: "Seda japonesa",
-    },
-    {
       image: "img3.png",
       source: "MidJourney",
       title: "Belleza tropical",
+    },
+    {
+      image: "img7.png",
+      source: "MidJourney",
+      title: "Colores",
+    },
+
+    {
+      image: "img11.png",
+      source: "MidJourney",
+      title: "Belleza tropical",
+    },
+    {
+      image: "img10.png",
+      source: "MidJourney",
+      title: "Humo",
+    },
+    {
+      image: "img12.png",
+      source: "MidJourney",
+      title: "Colores",
     },
     {
       image: "img4.png",
@@ -55,19 +71,20 @@ const App = () => {
       title: "Infancia de las cosas",
     },
     {
+      image: "img9.png",
+      source: "MidJourney",
+      title: "Colores de la sabiduría",
+    },
+    {
       image: "img5.png",
       source: "MidJourney",
       title: "Felinos",
     },
+
     {
       image: "img6.png",
       source: "MidJourney",
       title: "Astronauta",
-    },
-    {
-      image: "img7.png",
-      source: "MidJourney",
-      title: "Envuelta en naturaleza",
     },
     {
       image: "img8.png",
@@ -75,9 +92,9 @@ const App = () => {
       title: "La felicidad",
     },
     {
-      image: "img9.png",
+      image: "img2.png",
       source: "MidJourney",
-      title: "Colores de la sabiduría",
+      title: "Seda japonesa",
     },
   ];
 

@@ -3,9 +3,9 @@ import React from "react";
 const Galeria = ({ cardsData, openModal }) => {
   return (
     <div className="galeria_container">
-      <h2>
+      <h1>
         IMAGENES<span className="degrade"> CON IA GENERATIVA</span>
-      </h2>
+      </h1>
 
       <div className="card-container">
         {cardsData.map((card, index) => (
@@ -16,7 +16,7 @@ const Galeria = ({ cardsData, openModal }) => {
             />
             <div className="card-content">
               <p>{card.source}</p>
-              <h2>{card.title}</h2>
+              <h3>{card.title}</h3>
             </div>
           </div>
         ))}

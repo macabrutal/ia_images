@@ -130,7 +130,7 @@ const App = () => {
             />
             <div className="modal-text">
               <p>{selectedCard.source}</p>
-              <h2>{selectedCard.title}</h2>
+              <h3>{selectedCard.title}</h3>
             </div>
           </div>
         </div>

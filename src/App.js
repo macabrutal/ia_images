@@ -107,9 +107,8 @@ const App = () => {
       {/* Usar el componente Galeria */}
       <footer>
         <div className="footer_container">
-          <h3> Prompteo </h3>
           <p className="white">
-            Agencia Digital
+            Prompteo | Agencia Digital
             <span className="coral bold"> de IA ✨</span>
           </p>
         </div>

@@ -298,7 +298,7 @@ p {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
   justify-content: center;
   padding: 16px;
   box-sizing: border-box;

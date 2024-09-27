@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Main from "./Main";
 import Galeria from "./Galeria"; // Importar el nuevo componente
+import Header from "./Header"; // Importamos el nuevo Header
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -100,22 +101,17 @@ const App = () => {
 
   return (
     <div className="container">
-      <Main /> {/* Incluir el componente Main */}
+      <Header />
+      <Main />
       <Galeria cardsData={cardsData} openModal={openModal} />{" "}
       {/* Usar el componente Galeria */}
       <footer>
         <div className="footer_container">
-          <h3> Macarena Rodríguez Correa </h3>
+          <h3> Prompteo </h3>
           <p className="white">
-            UI/UX Designer, Front-end &
-            <span className="coral bold"> IA Lover ✨</span>.
+            Agencia Digital
+            <span className="coral bold"> de IA ✨</span>
           </p>
-          <div className="video-wrapper">
-            <img
-              src={process.env.PUBLIC_URL + "/img/cerebro.png"}
-              alt="Cerebro"
-            />
-          </div>
         </div>
       </footer>
       {modalOpen && (

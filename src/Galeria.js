@@ -2,10 +2,11 @@ import React from "react";
 
 const Galeria = ({ cardsData, openModal }) => {
   return (
-    <div>
-      <header>
-        <h2 className="degrade">Imágenes con IA</h2>
-      </header>
+    <div className="galeria_container">
+      <h2>
+        IMAGENES<span className="degrade"> CON IA GENERATIVA</span>
+      </h2>
+
       <div className="card-container">
         {cardsData.map((card, index) => (
           <div className="card" key={index} onClick={() => openModal(card)}>

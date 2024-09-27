@@ -11,13 +11,48 @@ body {
 }
 
 .container {
-  padding: 0 16px;
   margin: 0 auto;
 }
 
-header {
+.galeria_container {
+  margin: 0 auto;
   text-align: center;
-  padding: 20px;
+}
+
+/* Header.css */
+.header {
+  background-color: #f2f3f5;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.nav-link {
+  color: #17182a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #dd6362;
 }
 
 .main-container {
@@ -35,7 +70,7 @@ header {
   /* width: 100%;
   max-width: 1229px;
   height: auto; */
-  border-radius: 8px;
+  margin-bottom: 50px;
 }
 
 footer {
@@ -57,19 +92,9 @@ footer {
 }
 
 h1 {
-  /* background-color: #b403d4;
-  background-image: linear-gradient(
-    90deg,
-    #b403d4 0%,
-    #e00454 27%,
-    #dd6362 50%,
-    #e00454 75%,
-    #b403d4 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  font-size: 4rem;
-  margin: 0;
+  font-size: 3.4rem;
+  margin-bottom: 50px;
+  font-weight: 400;
 }
 
 header h2 {
@@ -78,8 +103,9 @@ header h2 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  color: #232324;
+  font-size: 3.2rem;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 p {
@@ -92,12 +118,22 @@ p {
 }
 
 .degrade {
-  background-color: #ee095d;
+  /* background-color: #e8039b; */
+  background-image: linear-gradient(
+    290deg,
+    #c003a2 15%,
+    #e8039b 30%,
+    #ff7c76 95%,
+    #f1fff7 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* background-color: #ee095d;
   background-image: linear-gradient(270deg, #dd6362 40%, #ee095d 80%);
 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  -webkit-text-fill-color: transparent; */
 }
 
 .coolc {
@@ -293,8 +329,13 @@ h3 {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-  h1 {
-    font-size: 3.8rem;
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
   }
 
   header h2 {

@@ -21,6 +21,21 @@ const App = () => {
   // Datos de las tarjetas (asegúrate de tener estos datos definidos)
   const cardsData = [
     {
+      image: "img13.png",
+      source: "loRA: personalización de modelos",
+      title: "Producto",
+    },
+    {
+      image: "img14.png",
+      source: "loRA: personalización de modelos",
+      title: "Producto en ambientes",
+    },
+    {
+      image: "img15.png",
+      source: "loRA: personalización de modelos",
+      title: "Persona",
+    },
+    {
       image: "img01.png",
       source: "MidJourney",
       title: "El Futuro",

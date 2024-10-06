@@ -3,9 +3,7 @@ import React from "react";
 const Galeria = ({ cardsData, openModal }) => {
   return (
     <div className="galeria_container">
-      <h1>
-        IMAGENES<span className="degrade"> CON IA GENERATIVA</span>
-      </h1>
+      <h1 className="degrade">Posibilidades Sin límites con IA</h1>
 
       <div className="card-container">
         {cardsData.map((card, index) => (

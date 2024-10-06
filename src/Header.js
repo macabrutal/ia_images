@@ -15,10 +15,10 @@ const Header = () => {
       </div>
       <nav className="nav-bar">
         <a href="#videos" className="nav-link">
-          Videos
+          Creatividad
         </a>
         <a href="#images" className="nav-link">
-          Imágenes
+          Ejemplos
         </a>
       </nav>
     </header>

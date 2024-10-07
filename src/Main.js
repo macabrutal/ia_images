@@ -7,7 +7,7 @@ const Main = () => {
 
       <video
         className="video"
-        src={process.env.PUBLIC_URL + "/img/robots_futuro.mp4"}
+        src={process.env.PUBLIC_URL + "/img/reel-prompteo.mp4"}
         width="1130"
         height="635"
         controls

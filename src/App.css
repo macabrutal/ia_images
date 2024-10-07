@@ -21,7 +21,8 @@ body {
 
 /* Header.css */
 .header {
-  background-color: #f2f3f5;
+  /* background-color: #f2f3f5; */
+  background-color: #06060b;
   padding: 10px 20px;
   margin-bottom: 30px;
   display: flex;
@@ -94,7 +95,7 @@ footer {
 
 h1 {
   font-size: 3.2rem;
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
   font-weight: 400;
 }
 
@@ -138,8 +139,8 @@ p {
     290deg,
     #b33cd5 /*15%*/,
     #e8039b /*30%*/,
-    #ff7c76 /*95%*/,
-    #f1fff7 /*100%*/
+    #eb50ac /*95%*/,
+    #bd75e4 /*100%*/
   );
   width: fit-content;
   -webkit-background-clip: text;

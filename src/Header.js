@@ -14,12 +14,9 @@ const Header = () => {
         />
       </div>
       <nav className="nav-bar">
-        <a href="#videos" className="nav-link">
-          Creatividad
-        </a>
-        <a href="#images" className="nav-link">
-          Ejemplos
-        </a>
+        {/* <a href="#videos" className="nav-link">
+          Explora posibilidades
+        </a> */}
       </nav>
     </header>
   );

@@ -22,7 +22,6 @@ body {
 /* Header.css */
 .header {
   /* background-color: #f2f3f5; */
-  background-color: #0f0f1a;
   padding: 15px 30px;
   /* margin-bottom: 25px; */
   display: flex;
@@ -33,6 +32,7 @@ body {
 .logo-container {
   padding-left: 20px;
   padding-top: 4px;
+  margin: 0 auto;
 }
 
 .logo {

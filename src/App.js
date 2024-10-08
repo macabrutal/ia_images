@@ -8,6 +8,7 @@ const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
   const [showScroll, setShowScroll] = useState(false); // Estado para controlar visibilidad del botón
+  const [visibleCards, setVisibleCards] = useState(3); // Inicialmente mostramos 3 tarjetas
 
   const openModal = (card) => {
     setSelectedCard(card);
@@ -26,6 +27,16 @@ const App = () => {
     } else {
       setShowScroll(false);
     }
+
+    // Detectar si se alcanzó el final de la página para cargar más tarjetas
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      loadMoreCards();
+    }
+  };
+
+  // Función para cargar más tarjetas
+  const loadMoreCards = () => {
+    setVisibleCards((prevVisibleCards) => prevVisibleCards + 3); // Mostrar 3 tarjetas más
   };
 
   // Función para volver arriba de manera suave
@@ -42,7 +53,6 @@ const App = () => {
   }, []);
 
   const cardsData = [
-    // Datos de las tarjetas
     {
       image: "img13.png",
       source: "loRA: personalización de modelos",
@@ -58,14 +68,47 @@ const App = () => {
       source: "loRA: personalización de modelos",
       title: "Persona",
     },
-    // ... (otros elementos)
+    { image: "img01.png", source: "MidJourney", title: "El Futuro" },
+    { image: "img02.png", source: "MidJourney", title: "Misterio en Lavanda" },
+    { image: "img03.png", source: "MidJourney", title: "Entrenando a la IA" },
+    { image: "img1.png", source: "MidJourney", title: "Robot woman" },
+    { image: "img3.png", source: "MidJourney", title: "Belleza tropical" },
+    {
+      image: "img7.png",
+      source: "MidJourney",
+      title: "Un Soplo de Color Pastel",
+    },
+    {
+      image: "img11.png",
+      source: "MidJourney",
+      title: "Esencia de verde Kiwi",
+    },
+    {
+      image: "img10.png",
+      source: "MidJourney",
+      title: "Encanto en humo de colores",
+    },
+    { image: "img12.png", source: "MidJourney", title: "Belleza frutal" },
+    { image: "img4.png", source: "MidJourney", title: "Infancia de las cosas" },
+    {
+      image: "img9.png",
+      source: "MidJourney",
+      title: "Colores de la sabiduría",
+    },
+    { image: "img5.png", source: "MidJourney", title: "Felinos" },
+    { image: "img6.png", source: "MidJourney", title: "Astronauta" },
+    { image: "img8.png", source: "MidJourney", title: "La felicidad" },
+    { image: "img2.png", source: "MidJourney", title: "Seda japonesa" },
   ];
+
+  // Mostrar solo las tarjetas visibles
+  const visibleCardsData = cardsData.slice(0, visibleCards);
 
   return (
     <div className="container">
       <Header />
       <Main />
-      <Galeria cardsData={cardsData} openModal={openModal} />
+      <Galeria cardsData={visibleCardsData} openModal={openModal} />
       <footer>
         <div className="footer_container">
           <p className="white">

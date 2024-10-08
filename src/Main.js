@@ -3,7 +3,7 @@ import React from "react";
 const Main = () => {
   return (
     <div className="main-container">
-      <h1 className="degrade">Creatividad sin límites con IA</h1>
+      {/* <h1 className="degrade ">Creatividad sin límites con IA</h1> */}
 
       <video
         className="video"

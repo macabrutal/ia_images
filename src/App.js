@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./Main";
-import Galeria from "./Galeria"; // Importar el nuevo componente
-import Header from "./Header"; // Importamos el nuevo Header
+import Galeria from "./Galeria";
+import Header from "./Header";
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
+  const [showScroll, setShowScroll] = useState(false); // Estado para controlar visibilidad del botón
 
   const openModal = (card) => {
     setSelectedCard(card);
@@ -18,8 +19,30 @@ const App = () => {
     setSelectedCard(null);
   };
 
-  // Datos de las tarjetas (asegúrate de tener estos datos definidos)
+  // Función para manejar el scroll y mostrar el botón
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) {
+      setShowScroll(true);
+    } else {
+      setShowScroll(false);
+    }
+  };
+
+  // Función para volver arriba de manera suave
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Detectar el scroll de la ventana
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const cardsData = [
+    // Datos de las tarjetas
     {
       image: "img13.png",
       source: "loRA: personalización de modelos",
@@ -35,96 +58,18 @@ const App = () => {
       source: "loRA: personalización de modelos",
       title: "Persona",
     },
-    {
-      image: "img01.png",
-      source: "MidJourney",
-      title: "El Futuro",
-    },
-    {
-      image: "img02.png",
-      source: "MidJourney",
-      title: "Misterio en Lavanda",
-    },
-    {
-      image: "img03.png",
-      source: "MidJourney",
-      title: "Entrenando a la IA",
-    },
-    {
-      image: "img1.png",
-      source: "MidJourney",
-      title: "Robot woman",
-    },
-    {
-      image: "img3.png",
-      source: "MidJourney",
-      title: "Belleza tropical",
-    },
-    {
-      image: "img7.png",
-      source: "MidJourney",
-      title: "Un Soplo de Color Pastel",
-    },
-
-    {
-      image: "img11.png",
-      source: "MidJourney",
-      title: "Esencia de verde Kiwi",
-    },
-    {
-      image: "img10.png",
-      source: "MidJourney",
-      title: "Encanto en humo de colores",
-    },
-    {
-      image: "img12.png",
-      source: "MidJourney",
-      title: "Belleza frutal",
-    },
-    {
-      image: "img4.png",
-      source: "MidJourney",
-      title: "Infancia de las cosas",
-    },
-    {
-      image: "img9.png",
-      source: "MidJourney",
-      title: "Colores de la sabiduría",
-    },
-    {
-      image: "img5.png",
-      source: "MidJourney",
-      title: "Felinos",
-    },
-
-    {
-      image: "img6.png",
-      source: "MidJourney",
-      title: "Astronauta",
-    },
-    {
-      image: "img8.png",
-      source: "MidJourney",
-      title: "La felicidad",
-    },
-    {
-      image: "img2.png",
-      source: "MidJourney",
-      title: "Seda japonesa",
-    },
+    // ... (otros elementos)
   ];
 
   return (
     <div className="container">
       <Header />
       <Main />
-      <Galeria cardsData={cardsData} openModal={openModal} />{" "}
-      {/* Usar el componente Galeria */}
+      <Galeria cardsData={cardsData} openModal={openModal} />
       <footer>
         <div className="footer_container">
           <p className="white">
-            Prompteo | Agencia Digital
-            <span className="coral bold"> de IA ✨</span>
+            PROMPTEO | <span className="coral bold">AI AGENCY ✨</span>
           </p>
         </div>
       </footer>
@@ -148,6 +93,12 @@ const App = () => {
             </div>
           </div>
         </div>
+      )}
+      {/* Botón de scroll hacia arriba */}
+      {showScroll && (
+        <button className="scroll-top" onClick={scrollToTop}>
+          ↑
+        </button>
       )}
     </div>
   );

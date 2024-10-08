@@ -13,11 +13,7 @@ const Header = () => {
           className="logo"
         />
       </div>
-      <nav className="nav-bar">
-        {/* <a href="#videos" className="nav-link">
-          Explora posibilidades
-        </a> */}
-      </nav>
+      <nav className="nav-bar"></nav>
     </header>
   );
 };
